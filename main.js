@@ -147,7 +147,7 @@
       var name = item.video.getAttribute('aria-label');
       item.container.classList.toggle('is-playing', playing);
       item.toggle.setAttribute('aria-label', (he ? (playing ? 'השהיה: ' : 'ניגון: ') : (playing ? 'Pause: ' : 'Play: ')) + name);
-      item.toggle.querySelector('.play-symbol').textContent = playing ? 'Ⅱ' : '▶';
+      item.toggle.setAttribute('data-playing', playing ? 'true' : 'false');
       item.toggle.querySelector('.reel-status').textContent = he ? (playing ? 'השהיה' : 'ניגון') : (playing ? 'Pause' : 'Play');
       paintSoundButton(item.mute, item.video);
     });
