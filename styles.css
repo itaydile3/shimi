@@ -47,7 +47,8 @@ p { text-wrap: pretty; }
 .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 24px; border-radius: var(--radius); background: var(--accent); color: var(--accent-ink); border: 1px solid transparent; text-decoration: none; font-weight: 600; font-size: .95rem; transition: background .18s; }
 .btn:hover { background: #ff743f; }
 .btn-lg { min-height: 56px; padding: 14px 26px; font-size: 1rem; }
-.text-link { font-size: .95rem; text-underline-offset: 7px; text-decoration-thickness: 1px; padding-block: 12px; }
+.btn-secondary { background: transparent; color: var(--ink); border-color: var(--muted); }
+.btn-secondary:hover { background: var(--bg-2); border-color: var(--ink); }
 .kicker { margin: 0 0 22px; font-size: .8rem; font-weight: 500; letter-spacing: .12em; color: var(--muted); }
 .accent-text { color: var(--accent); }
 .hero { padding-block: 64px 58px; display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(40px, 6vw, 90px); align-items: center; }
@@ -259,7 +260,6 @@ html.js.motion-ready .reveal:focus-within { opacity: 1; transform: none; }
   .lede { margin-block: 24px; font-size: 1rem; }
   .hero-actions { gap: 8px 20px; }
   .hero-actions .btn { flex: 1 1 250px; }
-  .hero-actions .text-link { font-size: .85rem; }
   .hero-credential { margin-top: 26px; padding-top: 20px; }
   .hero-feature { max-width: none; grid-row: 1; }
   .hero-media { height: clamp(250px, 43svh, 390px); aspect-ratio: auto; }
