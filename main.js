@@ -11,31 +11,31 @@
 
   var notes = {
     he: {
-      default: "שלום שימי, אשמח לקבוע שיחת היכרות של 15 דקות.",
-      presence: "שלום שימי, מעניינת אותי חבילת נוכחות.",
-      growth: "שלום שימי, מעניינת אותי חבילת צמיחה.",
-      department: "שלום שימי, מעניינת אותי חבילת מחלקה.",
-      audit: "שלום שימי, אשלח את האינסטגרם שלי ואשמח ל-3 רעיונות לשיפור.",
+      default: "שלום שימי, אשמח לקבוע שיחת היכרות של 15 דקות ולדבר על התוכן והשיווק של העסק שלי.",
+      presence: "שלום שימי, אשמח לשמוע על מסלול נוכחות ולתכנן יום צילום לעסק שלי.",
+      growth: "שלום שימי, אשמח לשמוע על מסלול צמיחה וליווי תוכן שוטף לעסק שלי.",
+      department: "שלום שימי, אשמח לשמוע על מסלול ניהול השיווק ולבדוק מה מתאים לעסק שלי.",
+      audit: "שלום שימי, אשלח את עמוד האינסטגרם של העסק ואשמח ל-3 רעיונות לשיפור התוכן.",
     },
     en: {
-      default: "Hi Shimi, I'd like to book a free 15-minute call.",
-      presence: "Hi Shimi, I'm interested in the Presence package.",
-      growth: "Hi Shimi, I'm interested in the Growth package.",
-      department: "Hi Shimi, I'm interested in the Department package.",
-      audit: "Hi Shimi, I'll send my Instagram and would like 3 ideas to improve it.",
+      default: "Hi Shimi, I'd like to book a free 15-minute call to discuss content and marketing for my business.",
+      presence: "Hi Shimi, I'd like to hear about the Presence package and plan a shoot for my business.",
+      growth: "Hi Shimi, I'd like to hear about the Growth package and ongoing content support for my business.",
+      department: "Hi Shimi, I'd like to discuss the Marketing package and what would work for my business.",
+      audit: "Hi Shimi, I'll send my business's Instagram page and would love 3 ideas to improve the content.",
     },
   };
 
   var meta = {
     he: {
-      title: "שימי לוי — בואו נצלם את הפיד כמו סרט",
-      description: "שימי לוי, בעל תואר בקולנוע. וידאו איכותי ושיווק דיגיטלי לעצמאים, עסקים וארגונים. קבעו שיחת היכרות של 15 דקות.",
+      title: "שימי לוי — וידאו קולנועי וחשיבה שיווקית",
+      description: "צילום, בימוי, עריכה ושיווק דיגיטלי עם שימי לוי, בעל תואר בקולנוע. תוכן מקצועי לעצמאים, עסקים וארגונים. בואו נדבר על העסק שלכם.",
       status: "השפה: עברית",
       langLabel: "שפה",
     },
     en: {
-      title: "Shimi Levy — Let’s shoot your feed like a film",
-      description: "Shimi Levy holds a degree in cinema and creates high-quality video and digital marketing for independent professionals, businesses, and organizations. Book a free 15-minute call.",
+      title: "Shimi Levy — Cinematic video. A marketing mindset.",
+      description: "Cinematic video, photography, and digital marketing with Shimi Levy, a cinema graduate. Content shaped around your business, audience, and goals. Book a free introductory call.",
       status: "Language: English",
       langLabel: "Language",
     },
