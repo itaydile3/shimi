@@ -41,12 +41,17 @@
     },
   };
 
-  function paintSound() {
-    if (!sound || !reel) return;
-    var on = !reel.muted;
+  function paintSoundButton(button, video) {
+    var on = !video.muted;
     var he = document.documentElement.lang !== "en";
-    sound.textContent = on ? (he ? "השתק" : "Mute") : (he ? "שמע" : "Sound");
-    sound.setAttribute("aria-pressed", on ? "true" : "false");
+    var label = he ? (on ? "השתקת שמע" : "הפעלת שמע") : (on ? "Mute video" : "Unmute video");
+    button.setAttribute("aria-label", label);
+    button.setAttribute("title", label);
+    button.setAttribute("aria-pressed", on ? "true" : "false");
+  }
+
+  function paintSound() {
+    if (sound && reel) paintSoundButton(sound, reel);
   }
 
   function apply(lang) {
@@ -144,9 +149,7 @@
       item.toggle.setAttribute('aria-label', (he ? (playing ? 'השהיה: ' : 'ניגון: ') : (playing ? 'Pause: ' : 'Play: ')) + name);
       item.toggle.querySelector('.play-symbol').textContent = playing ? 'Ⅱ' : '▶';
       item.toggle.querySelector('.reel-status').textContent = he ? (playing ? 'השהיה' : 'ניגון') : (playing ? 'Pause' : 'Play');
-      item.mute.textContent = he ? (item.video.muted ? 'שמע' : 'השתק') : (item.video.muted ? 'Sound' : 'Mute');
-      item.mute.setAttribute('aria-label', he ? (item.video.muted ? 'הפעלת שמע' : 'השתקת שמע') : (item.video.muted ? 'Unmute reel' : 'Mute reel'));
-      item.mute.setAttribute('aria-pressed', item.video.muted ? 'false' : 'true');
+      paintSoundButton(item.mute, item.video);
     });
   }
 
@@ -268,6 +271,7 @@
   });
 
   if (sound && reel) {
+    reel.addEventListener("volumechange", paintSound);
     sound.addEventListener("click", function () {
       reel.muted = !reel.muted;
       if (!reel.muted) {

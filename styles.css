@@ -75,6 +75,9 @@ p { text-wrap: pretty; }
 .hero-media.is-recording .rec::before { animation: blink 1s steps(2) infinite; }
 @keyframes blink { 50% { opacity: .2; } }
 .media-button { cursor: pointer; border: 1px solid #ffffff66; background: #111210bb; color: white; padding: 8px 12px; min-height: 44px; min-width: 44px; border-radius: 3px; font-size: .8rem; }
+.sound-toggle { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; }
+.sound-icon { display: block; width: 22px; height: 22px; }
+.sound-toggle[aria-pressed="false"] .sound-on, .sound-toggle[aria-pressed="true"] .sound-off { display: none; }
 .hero-feature figcaption { display: flex; justify-content: space-between; gap: 14px; margin-top: 12px; color: var(--muted); font-size: .75rem; letter-spacing: .05em; }
 .hero-feature figcaption > span:first-child { direction: ltr; }
 .client-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; gap: 32px; align-items: center; padding-block: 27px; }
@@ -338,7 +341,7 @@ body::after {
 .is-playing .play-symbol { opacity: 0; }
 .is-playing .reel-toggle:hover .play-symbol, .is-playing .reel-toggle:focus-visible .play-symbol { opacity: 1; }
 .reel-status { position: absolute; bottom: 16px; inset-inline-start: 14px; background: #111210d9; padding: 8px 12px; font: 500 .8rem/1.3 Heebo, sans-serif; }
-.reel-sound { position: absolute; bottom: 16px; inset-inline-end: 14px; z-index: 1; min-width: 52px; min-height: 44px; border: 1px solid #fff7; background: #111210d9; color: #fff; font-size: .8rem; cursor: pointer; }
+.reel-sound { position: absolute; bottom: 16px; inset-inline-end: 14px; z-index: 1; min-width: 44px; min-height: 44px; border: 1px solid #fff7; background: #111210d9; color: #fff; font-size: .8rem; cursor: pointer; }
 .reel-toggle:focus-visible { outline-offset: -5px; }
 .reels [hidden] { display: none; }
 @media (prefers-reduced-motion: reduce) { .ticker-toggle { display: none; } }
