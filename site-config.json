@@ -1,0 +1,34 @@
+{
+  "demo": true,
+  "siteUrl": "https://itaydile3.github.io/shimi/",
+  "instagramUrl": "https://instagram.example/shimi",
+  "analytics": {
+    "ga4Id": "G-DEMO000000",
+    "metaPixelId": "000000000000000",
+    "clarityId": "DEMO000000"
+  },
+  "testimonials": [
+    {
+      "approved": false,
+      "name": { "he": "נועם · לקוח לדוגמה", "en": "Noam · Demo client" },
+      "role": { "he": "נותן שירות · שם ותפקיד להחלפה", "en": "Service professional · Replace name and role" },
+      "quote": {
+        "he": "היה לי קשה להסביר מול מצלמה מה אני עושה. שימי הוביל את הצילום וידע להפוך את ההסבר שלי לסרטון ברור שאני רוצה לשלוח ללקוחות.",
+        "en": "I struggled to explain what I do on camera. Shimi guided the shoot and turned my explanation into a clear video I’d want to send to clients."
+      },
+      "image": "assets/demo-client-a.svg",
+      "video": ""
+    },
+    {
+      "approved": false,
+      "name": { "he": "דנה · לקוחה לדוגמה", "en": "Dana · Demo client" },
+      "role": { "he": "בעלת עסק · שם ותפקיד להחלפה", "en": "Business owner · Replace name and role" },
+      "quote": {
+        "he": "רציתי שהתוכן ירגיש כמו העסק שלי. מהרעיון ועד העריכה, היה מישהו אחד שהקשיב, דייק ודאג שהכול יתחבר.",
+        "en": "I wanted the content to feel like my business. From the idea to the edit, one person listened, refined the details, and brought it all together."
+      },
+      "image": "assets/demo-client-b.svg",
+      "video": ""
+    }
+  ]
+}
